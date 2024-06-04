@@ -1,9 +1,9 @@
-package com.example.upsdowns2;
+package com.example.upsdowns2.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class UpsDownsController {
     @FXML
     private Label welcomeText;
 
