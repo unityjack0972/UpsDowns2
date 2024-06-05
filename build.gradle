@@ -23,7 +23,7 @@ tasks.withType(JavaCompile).configureEach {
 
 application {
     mainModule = 'com.example.upsdowns2'
-    mainClass = 'com.example.upsdowns2.HelloApplication'
+    mainClass = 'com.example.upsdowns2.UpsDownsApplication'
 }
 
 javafx {
