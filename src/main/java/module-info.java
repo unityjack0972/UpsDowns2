@@ -1,3 +1,4 @@
+@SuppressWarnings("module")
 module com.example.upsdowns2 {
     requires javafx.controls;
     requires javafx.fxml;
