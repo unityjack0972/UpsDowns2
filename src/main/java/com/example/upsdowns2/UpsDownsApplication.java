@@ -12,7 +12,7 @@ public class UpsDownsApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(UpsDownsApplication.class.getResource("upsdowns-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setTitle("Ups&Downs Library");
         stage.setScene(scene);
         stage.show();
     }

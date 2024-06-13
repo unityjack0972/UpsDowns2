@@ -1,15 +1,309 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="287.0" prefWidth="288.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1"
-      xmlns="http://javafx.com/javafx/21" fx:controller="com.example.upsdowns2.controller.UpsDownsController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-    <Button onAction="#onHelloButtonClick" text="Hello World!"/>
-
-    <Label fx:id="welcomeText"/>
-</VBox>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images4UND/UPSANDDOWNS.jpg" />
+               </image>
+            </ImageView>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="84.0" prefWidth="11.0" translateX="5.0" translateY="10.0" />
+            <HBox prefHeight="20.0" prefWidth="80.0" scaleX="2.0" scaleY="0.3" spacing="30.0" translateX="55.0">
+               <children>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="108.0" promptText="Search" scaleY="6.0" translateX="15.0" translateY="25.0">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="8.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" scaleY="6.0" translateX="-25.0" translateY="30.0">
+                     <image>
+                        <Image url="@../../../../../Images4UND/71403.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="74.0" prefWidth="180.0" translateX="100.0" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Hot">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Categories">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="42.0" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Browse">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="74.0" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="My Books">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="109.0" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="History">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="141.0" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Favorites">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="173.0" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Options">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="208.0" prefHeight="32.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="10.0" prefHeight="39.0" prefWidth="117.0" text="Recommended (추천)">
+               <font>
+                  <Font name="Palatino Linotype" size="12.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="9.0" layoutY="29.0" prefHeight="114.0" prefWidth="533.0">
+               <content>
+                  <HBox prefHeight="112.0" prefWidth="534.0">
+                     <children>
+                        <Pane prefHeight="118.0" prefWidth="157.0">
+                           <children>
+                              <ImageView fitHeight="98.0" fitWidth="85.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Images4UND/22.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="73.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="돈을 위해 평생을 일한 가난한 아빠와 평생 돈이 자신을 위해 일하게 했던 부자 아빠 사이에서 배우는 경제!" wrappingWidth="81.07421875">
+                                 <font>
+                                    <Font name="Haan YHead L" size="11.0" />
+                                 </font>
+                              </Text>
+                              <Label layoutX="75.0" layoutY="4.0" prefHeight="12.0" prefWidth="82.0" text="부자 아빠 가난한 아빠 2" textFill="#ff69f0">
+                                 <font>
+                                    <Font name="Haan Sollip M" size="8.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="118.0" prefWidth="157.0">
+                           <children>
+                              <ImageView fitHeight="98.0" fitWidth="85.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Images4UND/334.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="73.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="타인을 위해서, 자신을 위해서, 수많은 사람들을 통해 배우다! 대인관계에 날개를 달아주는 전설적인 책!" wrappingWidth="81.07421875">
+                                 <font>
+                                    <Font name="Haan YHead L" size="11.0" />
+                                 </font>
+                              </Text>
+                              <Label layoutX="75.0" layoutY="4.0" prefHeight="12.0" prefWidth="82.0" text="인간관계론" textFill="#1af7ff">
+                                 <font>
+                                    <Font name="Haan Sollip M" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Pane>
+                        <Pane layoutX="167.0" layoutY="10.0" prefHeight="118.0" prefWidth="157.0">
+                           <children>
+                              <ImageView fitHeight="98.0" fitWidth="85.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Images4UND/XL.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="63.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="삶의 부조리를 직시하라! 실리주의의 작가 알베르 카뮈의 몰입되는 소설! 그의 철학이 담겨있다." wrappingWidth="82.07421875">
+                                 <font>
+                                    <Font name="Haan YHead L" size="11.0" />
+                                 </font>
+                              </Text>
+                              <Label layoutX="63.0" layoutY="4.0" prefHeight="12.0" prefWidth="82.0" text="이방인" textFill="RED">
+                                 <font>
+                                    <Font name="Haan Sollip M" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="9.0" layoutY="157.0" prefHeight="146.0" prefWidth="534.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="-4.0" layoutY="-4.0" prefHeight="219.0" prefWidth="549.0">
+                           <children>
+                              <GridPane prefHeight="238.0" prefWidth="598.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="11.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="73.0" layoutX="310.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/L_84916.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="88.0" fitWidth="73.0" layoutX="310.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/341070678g.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="97.0" fitWidth="66.0" layoutX="385.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/356655284g.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="85.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/33.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="97.0" fitWidth="69.0" layoutX="85.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/asdasd.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="85.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/rlck.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="235.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/X2L.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="310.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/wnrdma.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="10.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/tlrpzl.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="460.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/xnwod.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="535.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/tkfkd.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="160.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/9791190118361.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="94.0" fitWidth="74.0" layoutX="235.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../Images4UND/qnfghkrtlf.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
